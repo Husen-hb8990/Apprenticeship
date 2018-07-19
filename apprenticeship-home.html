@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="apprenticeship.css">
+</head>
+<body>
+<!---top navigation--->
+<div class="topnav">
+  <a href="#"  id="topnav">
+	<img class="image" src="hb2.jpg"><span id="apprenticeship_logo">Apprenticeship</a>
+
+	  <div class="search-container">
+	   
+		  <input type="text" placeholder="Search.." name="search">
+		  <button type="submit"><i class="fa fa-search"></i></button>
+	  </div>
+  <div class="ins"><a href="#" class="institute">Institute</a></div>
+  <a href="#" class="employer">Employer</a>
+  <div ><a href="#" class="candidate">Candidate Registration</a></div>
+  <a href="#" class="login">Login</a>
+  
+</div>
+
+
+<!--login form-->
+
+<div class="maindiv">
+	<div class="login-page" style="display:inline-block">
+		<h3>Are you Looking for a Apprenticeship?</h3> 
+		<p> Register Free & Start applying for Apprenticeship</p>
+	</div>
+
+
+<form action="/action_page.php" method="get" target="_blank">
+
+	<label class="fname">First Name<span class="star" style="color:red">*</span></label>
+	<input type="text"  id="fname" placeholder="Enter First Name" required/>
+	
+	
+	<label class="lname">Last Name<span class="star2"style="color:red">*</span></label>
+	<input type="text" id="lname" placeholder="Enter Last Name"/><br>
+	<span id="status1" style="color:red;margin:164px;font-size:14px"></span>
+	<span id="status11" style="color:red;margin:126px;font-size:14px;"></span><br> 
+	
+	<label class="email">Email<span class="star3">*</span></label>
+	<input type="text"  id="email"  placeholder="Enter Email" required/>
+
+	<label class="password">Password<span class="star4">*</span></label>
+	<input type="password" id="pswd" placeholder="Enter Password" required/><br>
+	
+	<span id="status2" style="color:red;margin:164px;font-size:14px;"></span>
+	<span id="status3" style="color:red;margin:126px;font-size:14px;"></span><br> 
+	
+	
+	<label class="mobile">Mobile<span class="star5">*</span></label>
+	<input type="text"   size="1" placeholder="+91" readonly/>
+	<input type="text"  id="ph_no" size="14" placeholder="Enter Mobile Number" required/><br>
+	<span id="status4" style="color:red;margin:164px;font-size:14px;"></span><br>
+
+	
+	<label class="dob">Date Of Birth<span class="star6">*</span></label>
+	<input type="date" id="dob" required placeholder="Enter Date Of Birth"/>
+	
+	<label class="gender">Gender<span class="star7" required/>*</span></label>
+	<select id="gender">
+		<option value="0">-Select Gender-</option>
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="Others">Others</option>
+	</select><br>
+	<span id="status5" style="color:red;margin:164px;font-size:14px;"></span>
+	<span id="status6" style="color:red;margin:126px;font-size:14px;"></span><br>
+
+
+	<label class="city">City<span class="star8">*</span></label>
+	<select id="city"  required/>
+		<option value="0">-Select City-</option>
+		<option value="Ahmedabad">Ahmedabad</option>
+		<option value="Bangalore">Bangalore</option>
+		<option value="Chennai">Chennai</option>
+		<option value="Delhi">Delhi</option>
+		<option value="Hyderabad">Hyderabad</option>
+	</select>
+	
+	<label class="pincode">Pincode<span class="star9">*</span></label>
+	<input type="number" id="pin"  placeholder="Enter Pincode" required/><br>
+	<span id="status7" style="color:red;margin:165px;font-size:14px;"></span>
+	<span id="status8" style="color:red;margin:126px;font-size:14px;"></span><br>
+	
+	<label class="aadhar">Aadhar Card Number<span class="star10">*</span></label>
+	<input type="number" id="aadhar" style="padding-right:5px" placeholder="Enter Aadhar Card No" required/><br>
+	<span id="status9" style="color:red;margin:164px;font-size:14px;"></span><br>
+	<button type="button" id="submit" class="button">Continue</button>
+
+</form>
+</div>
+<!--form validation code--->
+<script src="apprenticeship.js">
+</script>
+
+
+<!--bottom nav--->
+<div class="navbar">
+  <a href="#About Us" class="about">About Us</a>
+  <a href="#Terms & Policy" class="terms">Terms & Policy</a>
+  <a href="#Case Study" class="case">Case Study</a>
+  <a href="#NETAP" class="netap">NETAP</a>
+ <a href="#FAQ">FAQ</a><br>
+
+	<div class="share">
+		<a href="#"><img src="linkedin1.png" style="padding-right:10px;" title="LinkedIn">
+		<img src="facebook.png" style="padding-right:10px" title="Facebook">
+		<img src="googleplus.png" style="padding-right:10px" title="Google+">
+		<img src="twitter.png" title="Twitter"></a><br><br>
+   </div>
+		<div class="copy">
+			<span>Copyright &#169; 2018 - All Rights Reserved</span> - <span class="hb">&#x210B;&#x212C;</span> Apprenticeship
+		</div>
+</div>
+
+
+
+</body>
+</html>
