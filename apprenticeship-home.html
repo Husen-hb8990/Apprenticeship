@@ -1,13 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="apprenticeship.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="apprenticeship.css">
 </head>
 <body>
 <!---top navigation--->
-<div class="topnav">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="apprenticeship-home.html" title="HB Apprenticeship"><img class="image" src="hb2.jpg"><br><span id="apprenticeship_logo">Apprenticeship</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       
+        <li><a href="#" title="Home">Home<span id="divide">|</span></a></li>
+		
+        <li><a href="#" title="Institute">Institute</a></li>
+      </ul>
+
+		 <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" title="Employer"><span class="glyphicon glyphicon-user"></span> Employer <span id="divide">|</span></a></li>
+        <li><a href="#" title="Candidate Registration"><span class="glyphicon glyphicon-log-in"></span> Candidate Registration</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Registration form--->
+
+
+<div class="container">
+  <form class="form-horizontal" action="/action_page.php">
+		<div class="col-xs-12 login-page" style="display:inline-block">
+			<h3>Are you Looking for a Apprenticeship?</h3> 
+			<p> Register Free & Start applying for Apprenticeship</p>
+		</div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="First Name">First Name<span class="star">*</span></label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="first name">
+		<span id="status1" style="color:red;font-size:14px"></span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Last Name">Last Name<span class="star">*</span> </label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="last name">
+		<span id="status11" style="color:red;;font-size:14px;"></span>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="Email">Email<span class="star">*</span> </label>
+      <div class="col-sm-10">          
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+		<span id="status2" style="color:red;font-size:14px;"></span>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="Last Name">Password<span class="star">*</span> </label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="password">
+		<span id="status3" style="color:red;font-size:14px;"></span>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2 col-xs-12" for="mobile">Mobile<span class="star">*</span> </label>
+      <div class="col-sm-10 col-lg-1 col-xs-3">          
+        <input type="text" class="form-control" id="phno" placeholder="+91" name="mobile Number" readonly>
+		
+      </div>
+		<div class="col-sm-10 col-lg-9 col-xs-9">          
+        <input type="number" class="form-control" id="ph_no" placeholder="Enter Mobile Number" name="mobile Number">
+		<span id="status4" style="color:red;font-size:14px;"></span>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="dob">Date of Birth<span class="star">*</span> </label>
+      <div class="col-sm-10">          
+        <input type="date" class="form-control" id="dob" placeholder="Enter Date of birth" name="dob">
+		<span id="status5" style="color:red;font-size:14px;"></span>
+      </div>
+    </div>
+	<div class="form-group">
+	  <label class="control-label col-sm-2" for="gender">Gender <span class="star">*</span></label>
+		<div class="col-sm-10">
+			<select class="form-control" id="gender">
+				<option value="0">-Select Gender-</option>
+				<option value="1">Male</option>
+				<option value="2">Female</option>
+				<option value="3">Others</option>
+			</select>
+			<span id="status6" style="color:red;font-size:14px;"></span>
+		</div>
+	</div>
+	<div class="form-group">
+	  <label class="control-label col-sm-2" for="gender">City<span class="star">*</span></label>
+		<div class="col-sm-10">
+			<select class="form-control" id="city">
+				<option value="0">-Select City-</option>
+				<option value ="1">Ahamadabad</option>
+				<option value="2">Bangalore</option>
+				<option value="3">Chennai</option>
+				<option value="4">Delhi</option>
+				<option value="5">Eroad</option>
+				<option value="6">Faridabad</option>
+				<option value="7">Gujarat</option>	
+				<option value="8">Hyderabad</option>
+				<option value="9">Indore</option>
+				<option value="10">Jarkhand</option>
+				<option value="11">Kolkata</option>
+				<option value="12">Lahore</option>
+				<option value="13">Mumbai</option>
+				<option value="14">Nandhed</option>
+				<option value="15">Orissa</option>
+				<option value="16">Punjab</option>
+			</select>
+			<span id="status7" style="color:red;font-size:14px;"></span>
+		</div>
+	</div>
+	
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="pincode">Pincode<span class="star">*</span> </label>
+      <div class="col-sm-10">          
+        <input type="number" class="form-control" id="pin" placeholder="Enter Pincode" name="pincode">
+		<span id="status8" style="color:red;font-size:14px;"></span>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2" for="aadharno">Aadaar No<span class="star">*</span></label>
+      <div class="col-sm-10">          
+        <input type="number" class="form-control" id="aadhar" placeholder="Enter Aadhar Number" name="aadharno">
+		<span id="status9" style="color:red;font-size:14px;"></span>
+      </div>
+    </div>
+	<div class="col-sm-10 col-lg-10 col-xs-12">
+		<button type="button" id="submit" class="btn btn-primary btn-block">Register</button>
+	</div>
+</div><br><br><br><br><br><br>
+
+
+<div class="footer">
+	<div class="row">
+		<div class="col-xs-12">
+			<a href="#" class="about">About Us</a>
+			<a href="#" class="terms">Terms & Policy</a>
+			<a href="#" class="case">Case Study</a>
+			<a href="#" class="netap">NETAP</a>
+			<a href="#" class="faq">FAQ</a>
+		</div>
+	</div>
+	
+	<div class="share">
+		<a href="#"><img src="linkedin1.png" style="padding-right:10px;" title="LinkedIn">
+		<img src="facebook.png" style="padding-right:10px" title="Facebook">
+		<img src="googleplus.png" style="padding-right:10px" title="Google+">
+		<img src="twitter.png" title="Twitter"></a><br><br>
+   </div>
+	
+	<div class="copy">
+			<span>Copyright &#169; 2018 - All Rights Reserved</span> - <span class="hb">&#x210B;&#x212C;</span> Apprenticeship
+		</div>
+</div>
+
+
+<script src="apprenticeship.js"></script>
+
+
+
+<!--<div class="topnav">
   <a href="#"  id="topnav">
 	<img class="image" src="hb2.jpg"><span id="apprenticeship_logo">Apprenticeship</a>
 
@@ -21,12 +203,12 @@
   <div ><a href="#" class="candidate">Candidate Registration</a></div>
   <a href="#" class="login">Login</a>
   
-</div>
+</div>-->
 
 
 <!--login form-->
 
-<div class="maindiv">
+<!--<div class="maindiv">
 	<div class="login-page" style="display:inline-block">
 		<h3>Are you Looking for a Apprenticeship?</h3> 
 		<p> Register Free & Start applying for Apprenticeship</p>
@@ -95,14 +277,12 @@
 	<button type="button" id="submit" class="button">Continue</button>
 
 </form>
-</div>
+</div>-->
 <!--form validation code--->
-<script src="apprenticeship.js">
-</script>
 
 
 <!--bottom nav--->
-<div class="navbar">
+<!--<div class="navbar">
   <a href="#About Us" class="about">About Us</a>
   <a href="#Terms & Policy" class="terms">Terms & Policy</a>
   <a href="#Case Study" class="case">Case Study</a>
@@ -118,7 +298,7 @@
 		<div class="copy">
 			<span>Copyright &#169; 2018 - All Rights Reserved</span> - <span class="hb">&#x210B;&#x212C;</span> Apprenticeship
 		</div>
-</div>
+</div>-->
 
 
 

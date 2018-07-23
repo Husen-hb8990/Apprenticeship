@@ -69,7 +69,7 @@ if  (firstName == ''){
 	}
 	
 	if(mob==""){
-	document.getElementById("status4").innerHTML="Please enter Min 10-digit mobile number!";
+	document.getElementById("status4").innerHTML="Please enter 10-digit mobile number!";
 	return;
 	}else if(!letters.test(mob)){
 		document.getElementById("status4").innerHTML="Please enter valid mobile number!";
